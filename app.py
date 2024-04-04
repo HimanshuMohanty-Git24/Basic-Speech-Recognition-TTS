@@ -49,7 +49,7 @@ def record_audio():
         return temp_wav_filename
 
 def main():
-    st.title("Speech Transcription App")
+    st.title("Speech Recognition App")
     option = st.selectbox("Choose an option", ("Upload Audio", "Record Audio"))
     if option == "Upload Audio":
         audio_file = st.file_uploader("Upload an audio file", type=["wav", "mp3", "flac"])
